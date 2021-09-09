@@ -46,7 +46,7 @@
 
 #### Dados enviados
 - username
-- senha
+- senha (maior que 5 caracteres)
 
 #### Dados retornados
 - sucesso / erro

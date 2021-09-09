@@ -1,5 +1,5 @@
 const express = require('express');
-const usuario = require('./controladores/usuarios');
+const usuarios = require('./controladores/usuarios');
 const login = require('./controladores/login');
 const verificaLogin = require('./filtros/verificaLogin');
 
