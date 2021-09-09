@@ -34,7 +34,7 @@ const cadastrarUsuario = async (req, res) => {
             return res.status(400).json("O usuário não foi cadastrado.");
         }
 
-        return res.status(200).json(usuario);
+        return res.status(200).json('Usuário cadastrado com sucesso!');
     } catch (error) {
         return res.status(400).json(error.message);
     }
@@ -56,6 +56,8 @@ const atualizarPerfil = async (req, res) => {
         telefone,
         genero
     } = req.body;
+
+    const { id } = req.usuario;
 
     if (!nome && !email && !senha && !imagem && !username && !site && !bio && !telefone && !genero) {
         return res.status(404).json('É obrigatório informar ao menos um campo para atualização');
